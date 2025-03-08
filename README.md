@@ -32,7 +32,9 @@ O projeto consiste no desenvolvimento de uma plataforma online para gestão de c
 2. Criar o banco de dados:
   
     O SQL do banco está presente no `config/criacao_banco.sql`
-     
+
+4. Para envio do email necessario ter uma conta e configurar o UserController -> enviarEmailVerificacao com seu email e senha
+   
 3. Execulte o comando no seu terminal:
     ```sh
     php -S localhost:5000 -t public
