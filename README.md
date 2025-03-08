@@ -29,14 +29,10 @@ O projeto consiste no desenvolvimento de uma plataforma online para gestão de c
    ```sh
    git clone https://github.com/AlanSeiki/chamadosTIPrefeitura.git
    
-2. Branch correta:
-   ```sh
-   git checkout chamadosti1.0.0
-
-3. Criar o banco de dados:
+2. Criar o banco de dados:
   
     O SQL do banco está presente no `config/criacao_banco.sql`
      
-5. Execulte o comando no seu terminal:
+3. Execulte o comando no seu terminal:
     ```sh
     php -S localhost:5000 -t public
