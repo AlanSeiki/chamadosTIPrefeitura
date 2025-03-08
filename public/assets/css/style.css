@@ -1,0 +1,327 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/static/Roboto-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/static/Roboto-Bold.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/static/Roboto-Italic.ttf') format('ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+.container-padrao {
+    min-height: 100dvh;
+    background-color: #d7e0d7;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-fluid .container-padrao {
+    height: calc(100dvh - 56px);
+    overflow: auto;
+    padding: 10px 54px 54px 54px;
+}
+
+.tab-icon {
+    font-size: 25px;
+}
+
+.mindvh-50 {
+    min-height: 50dvh !important;
+}
+
+.maxdvh-60 {
+    max-height: 60dvh !important;
+}
+
+.maxdvh-90 {
+    max-height: 90dvh !important;
+}
+
+.dvw-50 {
+    min-width: 50dvh !important;
+}
+
+.w-45 {
+    width: 45% !important;
+}
+
+.w-10 {
+    width: 10% !important;
+}
+
+.elevated {
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hide {
+    display: none;
+}
+
+.form-control-t {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15sease-in-out, box-shadow .15sease-in-out;
+}
+
+.form-floating>.form-control-t {
+    height: calc(3.5rem + calc(var(--bs-border-width)* 2));
+    min-height: calc(3.5rem + calc(var(--bs-border-width)* 2));
+    line-height: 1.25;
+}
+
+.form-floating>.form-control-t {
+    padding: 1rem .75rem;
+}
+
+.form-floating>.form-control-t:not(:placeholder-shown)~label {
+    color: rgba(var(--bs-body-color-rgb), .65);
+    transform: scale(.85) translateY(-.5rem) translateX(.15rem);
+}
+
+.form-floating>.form-control-t:not(:placeholder-shown) {
+    padding-top: 1.625rem;
+    padding-bottom: .625rem;
+}
+
+.form-control-t.is-invalid {
+    border-color: var(--bs-form-invalid-border-color);
+    padding-right: calc(1.5em + .75rem);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right calc(.375em + .1875rem) center;
+    background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+}
+
+.form-control-t.is-valid {
+    border-color: var(--bs-form-valid-border-color);
+    padding-right: calc(1.5em + .75rem);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right calc(.375em + .1875rem) center;
+    background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+}
+
+.config-toast {
+    z-index: 2000;
+    right: 20px;
+    top: 20px;
+}
+
+.config-dropdown-select {
+    max-height: 90px;
+    overflow: auto;
+    padding: 10px;
+}
+
+
+/* Navbar fixa no topo */
+.navbar-top {
+    background-color: #212529;
+    color: white;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+.navbar-top .user-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar-top .user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.navbar-top .user-info .notification-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.container-fluid {
+    padding: 56px 0 0 0;
+}
+
+.tabbar-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #212529;
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 3;
+}
+
+.tabbar-bottom a {
+    color: white;
+    text-align: center;
+    flex: 1;
+    text-decoration: none;
+}
+
+.tabbar-bottom a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.min-photo-user {
+    background-color: white;
+}
+
+.button-cancel-summernote {
+    background-color: red;
+    color: white;
+}
+
+.button-save-summernote {
+    background-color: green;
+    color: white;
+}
+
+.form-chamado {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+.form-label {
+    font-weight: 600;
+}
+
+.select2-selection {
+    height: 38px !important;
+    border-radius: 0.375rem !important;
+}
+
+.select2-selection__arrow {
+    height: 36px !important;
+}
+
+.select2-selection__rendered {
+    height: 38px;
+    align-content: center
+}
+
+.dt-container .row {
+    flex-direction: row-reverse;
+}
+
+.dt-container .row .dt-layout-end {
+    margin-left: 0 !important;
+}
+
+.dt-container .row .dt-layout-start {
+    margin-right: 0 !important;
+}
+
+tbody>tr>td {
+    align-content: center;
+}
+
+.status {
+    font-size: 16px;
+}
+
+.select2-selection.is-valid {
+    border-color: #198754 !important;
+}
+
+.select2-selection.is-invalid {
+    border-color: #dc3545 !important;
+}
+
+.pagina-com-tabela {
+    background: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.perfiltCollapse {
+    z-index: 5;
+    position: absolute;
+    top: 56px;
+    right: 16px;
+}
+
+.modal-footer {
+    justify-content: space-between;
+}
+
+.button-eye {
+    top: 71%;
+    right: 30px;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+}
+
+#adicionar-contato {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .rounded-sm {
+        border-radius: 0.375rem;
+    }
+
+    .tabbar-bottom {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .config-toast {
+        right: unset;
+        transform: translateX(-50%) !important;
+        left: 50% !important;
+    }
+
+
+
+    .sidebar {
+        display: none;
+    }
+
+    .container-fluid .container-padrao {
+        padding: 10px 10px 54px 10px;
+    }
+}
