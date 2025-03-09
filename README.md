@@ -25,6 +25,8 @@ O projeto consiste no desenvolvimento de uma plataforma online para gestão de c
 
 ## 🚀 Como Executar  
 
+* Para logar como admin -> email: admin@example.com senha: 123
+
 1. Clone o repositório:  
    ```sh
    git clone https://github.com/AlanSeiki/chamadosTIPrefeitura.git
@@ -33,7 +35,7 @@ O projeto consiste no desenvolvimento de uma plataforma online para gestão de c
   
     O SQL do banco está presente no `config/criacao_banco.sql`
 
-4. Para envio do email necessario ter uma conta e configurar o UserController -> enviarEmailVerificacao com seu email e senha
+4. Para envio do email necessario ter uma conta e configurar o `UserController -> enviarEmailVerificacao com seu email e senha` caso não queira é so ir no `UserController -> $token = bin2hex(random_bytes(32)); e colocar como null`
    
 3. Execulte o comando no seu terminal:
     ```sh
